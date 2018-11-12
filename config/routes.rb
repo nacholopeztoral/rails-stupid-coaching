@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
   # get 'questions/ask', to: 'questions#ask', as: :ask
 
-  get 'questions/ask', to: 'questions#ask', as: :ask
+  get '/', to: 'questions#ask', as: :ask
+  # / instead of questions/ask
 #
   post "questions/answer", to: 'questions#answer'
 
